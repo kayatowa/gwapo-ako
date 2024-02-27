@@ -1,0 +1,43 @@
+        //variables
+     Scanner keyboard = new Scanner(System.in);
+     
+     String Last ;
+     String FN ;
+     int dECO;
+     int iNDnum;
+     double RPU;
+     
+     //room numbers
+     String department =   "Engineering";
+     int NOU = 24;
+     double RF = 350.00;
+     double MF = 1800.00;
+     double TF = 10000.00;
+     
+     
+     double TP;
+     TP = TF + RF + MF ;
+     
+     //system
+     System.out.print("Last name of student:  ");
+     Last = keyboard.nextLine();
+     System.out.print("First name of student:  ");
+     FN = keyboard.nextLine();
+     System.out.print("Department code:  ");
+     dECO = keyboard.nextInt();
+     System.out.print("ID code:  ");
+     iNDnum = keyboard.nextInt();
+     System.out.print("Rate per unit:  ");
+     RPU = keyboard.nextDouble();
+     
+     
+     System.out.print("\n+---------------------------------+"
+                     +"\nStudent name: " + Last +" "+ FN 
+                     +"\nDepartment code: " + dECO
+                     +"\nDeapartment: " + department 
+                     +"\nID number: " + iNDnum 
+                     +"\nNumber of units: " + NOU 
+                     +"\nRate of units: " + RPU
+                     +"\n-----------------------------------+"
+                     +"\nTotal of pay: " + TP );
+  
